@@ -32,7 +32,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final pixelsPerCell = 25.0;
+  final pixelsPerCell = 10.0;
   late int rowCount;
   late int colCount;
   late List<List<bool>> _grid;
@@ -52,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Processing(
             sketch: Sketch.simple(
               setup: (sketch) async {
-                sketch.frameRate = 6;
+                sketch.frameRate = 24;
                 sketch.size(
                   width: mediaQuery.size.width.floor(),
                   height: mediaQuery.size.height.floor(),
